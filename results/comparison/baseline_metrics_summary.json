@@ -1,0 +1,167 @@
+{
+  "split": "dev",
+  "evaluation": "seqeval strict IOB2 entity precision/recall/F1",
+  "selection": "maximum Dev entity F1; earliest epoch on ties",
+  "models": [
+    {
+      "Model": "BERT-base",
+      "model_key": "bert_base",
+      "Pretraining Strategy": "General-domain",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8069129916567342,
+      "recall": 0.8602287166454892,
+      "f1": 0.8327183271832718,
+      "validation_loss": 0.055922731757164,
+      "split": "dev",
+      "model": "bert-base-cased",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-966",
+      "best_checkpoint": "models/bert_base/baseline/best",
+      "checkpoint_sha256": "d9b4f84cb08dbd56f843783d264abefe1e5f9dfdceab48f7661dfca2a0e59dbd",
+      "training_seconds": 145.8913,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-03T10:57:36.515856+00:00",
+      "checkpoint_reload_verified": true,
+      "checkpoint_reload_method": "bitwise weight equality and matching FP16 logits against selected Trainer checkpoint",
+      "training_duration_source": "Trainer train_runtime log",
+      "result_directory": "results/bert_base/baseline"
+    },
+    {
+      "Model": "BioBERT Initial",
+      "model_key": "biobert",
+      "Pretraining Strategy": "Continued biomedical pretraining",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8485958485958486,
+      "recall": 0.8831003811944091,
+      "f1": 0.8655043586550435,
+      "validation_loss": 0.04828420281410217,
+      "split": "dev",
+      "model": "dmis-lab/biobert-base-cased-v1.1",
+      "run_name": "initial",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-966",
+      "best_checkpoint": "models/biobert/baseline/best",
+      "checkpoint_sha256": "c355e0e450d4784090518f5b66ef5955cda598493af0e7d571c38f6a807823d9",
+      "training_seconds": 153.10425670002587,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-03T11:00:57.601811+00:00",
+      "checkpoint_reload_verified": true,
+      "result_directory": "results/biobert/baseline"
+    },
+    {
+      "Model": "PubMedBERT",
+      "model_key": "pubmedbert",
+      "Pretraining Strategy": "Biomedical pretraining from scratch",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8553770086526576,
+      "recall": 0.8792884371029225,
+      "f1": 0.8671679197994987,
+      "validation_loss": 0.050003424286842346,
+      "split": "dev",
+      "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-963",
+      "best_checkpoint": "models/pubmedbert/baseline/best",
+      "checkpoint_sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b",
+      "training_seconds": 716.3267429000698,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-04T02:09:45.127967+00:00",
+      "result_directory": "results/pubmedbert/baseline",
+      "checkpoint_reload_verified": true
+    },
+    {
+      "Model": "SciBERT",
+      "model_key": "scibert",
+      "Pretraining Strategy": "Scientific-domain pretraining",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8475836431226765,
+      "recall": 0.8691232528589581,
+      "f1": 0.8582183186951067,
+      "validation_loss": 0.04854137450456619,
+      "split": "dev",
+      "model": "allenai/scibert_scivocab_cased",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-963",
+      "best_checkpoint": "models/scibert/baseline/best",
+      "checkpoint_sha256": "3ff7f676b8a778e43f07a2b08990d2111ee5169a52fde1be1861737b708f3fa0",
+      "training_seconds": 719.8700735999737,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-04T02:22:41.050012+00:00",
+      "result_directory": "results/scibert/baseline",
+      "checkpoint_reload_verified": true
+    }
+  ],
+  "source_files": {
+    "BERT-base": {
+      "validation_metrics.json": {
+        "path": "results/bert_base/baseline/validation_metrics.json",
+        "sha256": "4a2e7b9e6809c15edc5da5ce99cec7ca16ba8f64beb0b7c4139231f791b39cc4"
+      },
+      "training_history.csv": {
+        "path": "results/bert_base/baseline/training_history.csv",
+        "sha256": "a791d02e24a7f0aeafeba2cda578bcfb78ca3f6b32844ff662198f6dd9dc92e1"
+      },
+      "training_config.json": {
+        "path": "results/bert_base/baseline/training_config.json",
+        "sha256": "1dc61d3aef56771079a2b9321c13e8efdf239efe74963e4f261cfe1b4ab5d198"
+      }
+    },
+    "BioBERT Initial": {
+      "validation_metrics.json": {
+        "path": "results/biobert/baseline/validation_metrics.json",
+        "sha256": "c30d00dbe8a3b76f2b2854408b55153944bd8402b0defad20dfd0bb042f37afa"
+      },
+      "training_history.csv": {
+        "path": "results/biobert/baseline/training_history.csv",
+        "sha256": "34eccebae2656e440e0663138eee629bfb6832b71ece5daddbe5e650b5c40c6d"
+      },
+      "training_config.json": {
+        "path": "results/biobert/baseline/training_config.json",
+        "sha256": "19759691e79124fbd55d3833c2409340956666fccbc484b49bfd7847a500e578"
+      }
+    },
+    "PubMedBERT": {
+      "validation_metrics.json": {
+        "path": "results/pubmedbert/baseline/validation_metrics.json",
+        "sha256": "f7c57e1277195e8092035209b5d6c4ad729e66c7f597bf864de0c4f5fc86d166"
+      },
+      "training_history.csv": {
+        "path": "results/pubmedbert/baseline/training_history.csv",
+        "sha256": "05bd71f2bd6f6607fb50685f70e3aef543fc4e43f154f36207a3d180b6a26c5e"
+      },
+      "training_config.json": {
+        "path": "results/pubmedbert/baseline/training_config.json",
+        "sha256": "10e8b0701f486e133535399031636d49a27fd3b3dbb7abcd9bf5c77b51b80ec3"
+      }
+    },
+    "SciBERT": {
+      "validation_metrics.json": {
+        "path": "results/scibert/baseline/validation_metrics.json",
+        "sha256": "cfbdbc9baa8a79ead47e26e71b78fe5f452189663b3d6a2abe0f4fb4b7203806"
+      },
+      "training_history.csv": {
+        "path": "results/scibert/baseline/training_history.csv",
+        "sha256": "58d8b1a163a6219cac47de94a8275b475df0b9b9a021970bd50c07adb4727d5d"
+      },
+      "training_config.json": {
+        "path": "results/scibert/baseline/training_config.json",
+        "sha256": "a30cb0c91fe78ce84b42ccf169eb7c590282cac5f1dc7306e5ecee44ca863ece"
+      }
+    }
+  },
+  "limitations": [
+    "Single seed (42); Dev-based selection.",
+    "Vocabulary, casing and tokenizer-dependent update counts differ."
+  ]
+}

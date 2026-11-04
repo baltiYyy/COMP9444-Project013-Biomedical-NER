@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "run": "bert_base/baseline",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8327183271832718,
+      "checkpoint_verified": true,
+      "role": "baseline",
+      "best_checkpoint": "models/bert_base/baseline/best",
+      "result_directory": "results/bert_base/baseline"
+    },
+    {
+      "run": "biobert/initial",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8655043586550435,
+      "checkpoint_verified": true,
+      "role": "baseline",
+      "best_checkpoint": "models/biobert/baseline/best",
+      "result_directory": "results/biobert/baseline"
+    },
+    {
+      "run": "biobert/lr3e5",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8619612742036228,
+      "checkpoint_verified": true,
+      "role": "tuning",
+      "best_checkpoint": "models/biobert/tuning/lr3e5/best",
+      "result_directory": "results/biobert/tuning/lr3e5"
+    },
+    {
+      "run": "biobert/extended5",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8701134930643128,
+      "checkpoint_verified": true,
+      "role": "tuning",
+      "best_checkpoint": "models/biobert/tuning/extended5/best",
+      "result_directory": "results/biobert/tuning/extended5"
+    },
+    {
+      "run": "pubmedbert/baseline",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8671679197994987,
+      "checkpoint_verified": true,
+      "role": "baseline",
+      "best_checkpoint": "models/pubmedbert/baseline/best",
+      "result_directory": "results/pubmedbert/baseline"
+    },
+    {
+      "run": "scibert/baseline",
+      "sentences": 882,
+      "fresh_dev_f1": 0.8582183186951067,
+      "checkpoint_verified": true,
+      "role": "baseline",
+      "best_checkpoint": "models/scibert/baseline/best",
+      "result_directory": "results/scibert/baseline"
+    }
+  ],
+  "data_validation": "passed",
+  "test_evaluated": false,
+  "single_seed": 42,
+  "notebook": "notebooks/project013.ipynb"
+}

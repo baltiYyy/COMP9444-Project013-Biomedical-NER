@@ -1,0 +1,22 @@
+{
+  "train": {
+    "sentence_samples": 5129,
+    "encoded_chunks": 5135,
+    "sentences_over_max_length": 5,
+    "max_sentence_subwords_with_specials": 270,
+    "mean_sentence_subwords_with_specials": 32.74147007213882,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 136086,
+    "dropped_tokens": 0
+  },
+  "dev": {
+    "sentence_samples": 882,
+    "encoded_chunks": 882,
+    "sentences_over_max_length": 0,
+    "max_sentence_subwords_with_specials": 112,
+    "mean_sentence_subwords_with_specials": 32.84920634920635,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 23969,
+    "dropped_tokens": 0
+  }
+}

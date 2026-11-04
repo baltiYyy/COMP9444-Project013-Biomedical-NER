@@ -1,0 +1,5 @@
+Model,model_key,learning_rate,batch_size,gradient_accumulation_steps,num_train_epochs,max_length,weight_decay,warmup_ratio,seed,fp16,do_lower_case,effective_batch_size,vocabulary_size,optimizer,scheduler,selection,revision,embedding_vocabulary_capacity,encoded_train_chunks,global_steps,warmup_steps
+BERT-base,bert_base,2e-05,8,2,3,128,0.01,0.1,42,True,False,16,28996,AdamW,linear,Dev strict IOB2 entity F1,cd5ef92a9fb2f889e972770a36d4ed042daf221e,28996,5139,966,97
+BioBERT Initial,biobert,2e-05,8,2,3,128,0.01,0.1,42,True,False,16,28996,AdamW,linear,Dev strict IOB2 entity F1,924f12e0c3db7f156a765ad53fb6b11e7afedbc8,28996,5139,966,97
+PubMedBERT,pubmedbert,2e-05,8,2,3,128,0.01,0.1,42,True,True,16,28895,AdamW,linear,Dev strict IOB2 entity F1,d673b8835373c6fa116d6d8006b33d48734e305d,30522,5135,963,97
+SciBERT,scibert,2e-05,8,2,3,128,0.01,0.1,42,True,False,16,31116,AdamW,linear,Dev strict IOB2 entity F1,ddf0be025f8e432a1870e34811997ba6725bf04a,31116,5135,963,97

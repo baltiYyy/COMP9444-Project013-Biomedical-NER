@@ -1,0 +1,4 @@
+split,document_records,unique_pmids,sentence_samples,tokens,disease_mentions,mean_sentence_tokens,median_sentence_tokens,max_sentence_tokens,O,B-Disease,I-Disease
+train,593,592,5129,136086,5145,26.532657438097093,24.0,224,124819,5145,6122
+dev,100,100,882,23969,787,27.175736961451246,25.0,97,22092,787,1090
+test,100,100,885,24495,960,27.677966101694917,25.0,130,22448,960,1087

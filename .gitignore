@@ -1,0 +1,37 @@
+# Local environments and interpreter caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Download caches and temporary files
+.cache/
+.hf_cache/
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+# Credentials and private keys (tokenizer files remain tracked)
+.env
+.env.*
+!.env.example
+.git-credentials
+credentials.json
+service-account*.json
+secrets.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+.aws/
+.ssh/
+# Optional serialized host-specific training metadata; JSON configuration is retained
+**/training_args.bin

@@ -1,0 +1,19 @@
+{
+  "precision": 0.8553770086526576,
+  "recall": 0.8792884371029225,
+  "f1": 0.8671679197994987,
+  "validation_loss": 0.050003424286842346,
+  "split": "dev",
+  "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "run_name": "baseline",
+  "best_epoch": 3.0,
+  "selected_trainer_checkpoint": "checkpoint-963",
+  "best_checkpoint": "models/pubmedbert/baseline/best",
+  "checkpoint_sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b",
+  "training_seconds": 716.3267429000698,
+  "number_of_sentences": 882,
+  "number_of_gold_entities": 787,
+  "completed_utc": "2026-11-04T02:09:45.127967+00:00",
+  "result_directory": "results/pubmedbert/baseline",
+  "checkpoint_reload_verified": true
+}

@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "label2id": {
+    "O": 0,
+    "B-Disease": 1,
+    "I-Disease": 2
+  },
+  "annotation_issues": [
+    {
+      "document_id": "train:10802668:1",
+      "kind": "partial_word_end",
+      "start": 105,
+      "end": 131,
+      "source_surface": "autosomal dominant disorde",
+      "source_category": "DiseaseClass",
+      "concept_id": "D030342",
+      "model_start": 105,
+      "model_end": 132,
+      "action": "extend train label to complete word",
+      "corrected_surface": "autosomal dominant disorder"
+    },
+    {
+      "document_id": "train:10923035:1",
+      "kind": "surface_mismatch",
+      "start": 711,
+      "end": 761,
+      "source_surface": "generalized epilepsy and febrile seizures   plus  ",
+      "source_category": "SpecificDisease",
+      "concept_id": "D004829+D003294",
+      "offset_surface": "generalized epilepsy and febrile seizures \" plus \"",
+      "action": "offsets authoritative"
+    },
+    {
+      "document_id": "train:2792129:1",
+      "kind": "partial_word_end",
+      "start": 195,
+      "end": 240,
+      "source_surface": "absence of the seventh component of complemen",
+      "source_category": "SpecificDisease",
+      "concept_id": "OMIM:610102",
+      "model_start": 195,
+      "model_end": 241,
+      "action": "extend train label to complete word",
+      "corrected_surface": "absence of the seventh component of complement"
+    }
+  ],
+  "split_overlap_pmids": 0,
+  "split_overlap_texts": 0,
+  "dropped_annotations": 0,
+  "all_bio_and_character_roundtrips_passed": true,
+  "full_document_token_coverage": true,
+  "document_records": {
+    "train": 593,
+    "dev": 100,
+    "test": 100
+  },
+  "unique_pmids": {
+    "train": 592,
+    "dev": 100,
+    "test": 100
+  },
+  "duplicate_policy": "Retain official train records; repeated PMID 8528200 has distinct record IDs."
+}

@@ -1,0 +1,18 @@
+{
+  "precision": 0.8635794743429287,
+  "recall": 0.8767471410419314,
+  "f1": 0.8701134930643128,
+  "validation_loss": 0.05419675260782242,
+  "split": "dev",
+  "model": "dmis-lab/biobert-base-cased-v1.1",
+  "run_name": "extended5",
+  "best_epoch": 3.0,
+  "selected_trainer_checkpoint": "checkpoint-966",
+  "best_checkpoint": "models/biobert/tuning/extended5/best",
+  "checkpoint_sha256": "abf8bcfd8c48a9d8f29acf99d48a901d95d16a03a6044187f938cf35cd48591c",
+  "training_seconds": 263.3876787000336,
+  "number_of_sentences": 882,
+  "number_of_gold_entities": 787,
+  "completed_utc": "2026-11-03T11:09:50.989182+00:00",
+  "checkpoint_reload_verified": true
+}

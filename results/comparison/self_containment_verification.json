@@ -1,0 +1,298 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "raw_to_processed_executed": true,
+      "functions_defined": [
+        "acquire",
+        "parse_pubtator",
+        "normalize_annotations",
+        "document_samples",
+        "prepare",
+        "encode_samples",
+        "decode_predictions",
+        "entity_metrics",
+        "evaluate_checkpoint",
+        "run_experiment"
+      ],
+      "src_imports_blocked": true,
+      "missing_checkpoint_error_checked": true,
+      "training_and_downloads_blocked": true,
+      "training_arguments_preserved": [
+        {
+          "model": "bert_base",
+          "run": "baseline",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "initial",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "lr3e5",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "extended5",
+          "only_output_paths_differ": true
+        }
+      ],
+      "statistics": {
+        "train": {
+          "samples": 5129,
+          "tokens": 136086,
+          "entities": 5145
+        },
+        "dev": {
+          "samples": 882,
+          "tokens": 23969,
+          "entities": 787
+        },
+        "test": {
+          "samples": 885,
+          "tokens": 24495,
+          "entities": 960
+        }
+      },
+      "metrics": [
+        {
+          "run": "baseline",
+          "precision": 0.8069129916567342,
+          "recall": 0.8602287166454892,
+          "f1": 0.8327183271832718,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "initial",
+          "precision": 0.8485958485958486,
+          "recall": 0.8831003811944091,
+          "f1": 0.8655043586550435,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "lr3e5",
+          "precision": 0.8476658476658476,
+          "recall": 0.8767471410419314,
+          "f1": 0.8619612742036228,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "extended5",
+          "precision": 0.8635794743429287,
+          "recall": 0.8767471410419314,
+          "f1": 0.8701134930643128,
+          "sentences": 882,
+          "fresh_inference": true
+        }
+      ],
+      "test": "Test A",
+      "status": "passed",
+      "isolation": "processed",
+      "code_cells": 49,
+      "embedded_figures": 9,
+      "notebook_errors": 0,
+      "kernel": "project013",
+      "completed_utc": "2026-11-03T13:01:29.265594+00:00",
+      "processed_rebuilt_byte_identically": true
+    },
+    {
+      "raw_to_processed_executed": true,
+      "functions_defined": [
+        "acquire",
+        "parse_pubtator",
+        "normalize_annotations",
+        "document_samples",
+        "prepare",
+        "encode_samples",
+        "decode_predictions",
+        "entity_metrics",
+        "evaluate_checkpoint",
+        "run_experiment"
+      ],
+      "src_imports_blocked": true,
+      "missing_checkpoint_error_checked": true,
+      "training_and_downloads_blocked": true,
+      "training_arguments_preserved": [
+        {
+          "model": "bert_base",
+          "run": "baseline",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "initial",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "lr3e5",
+          "only_output_paths_differ": true
+        },
+        {
+          "model": "biobert",
+          "run": "extended5",
+          "only_output_paths_differ": true
+        }
+      ],
+      "statistics": {
+        "train": {
+          "samples": 5129,
+          "tokens": 136086,
+          "entities": 5145
+        },
+        "dev": {
+          "samples": 882,
+          "tokens": 23969,
+          "entities": 787
+        },
+        "test": {
+          "samples": 885,
+          "tokens": 24495,
+          "entities": 960
+        }
+      },
+      "metrics": [
+        {
+          "run": "baseline",
+          "precision": 0.8069129916567342,
+          "recall": 0.8602287166454892,
+          "f1": 0.8327183271832718,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "initial",
+          "precision": 0.8485958485958486,
+          "recall": 0.8831003811944091,
+          "f1": 0.8655043586550435,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "lr3e5",
+          "precision": 0.8476658476658476,
+          "recall": 0.8767471410419314,
+          "f1": 0.8619612742036228,
+          "sentences": 882,
+          "fresh_inference": true
+        },
+        {
+          "run": "extended5",
+          "precision": 0.8635794743429287,
+          "recall": 0.8767471410419314,
+          "f1": 0.8701134930643128,
+          "sentences": 882,
+          "fresh_inference": true
+        }
+      ],
+      "test": "Test B",
+      "status": "passed",
+      "isolation": "src",
+      "code_cells": 49,
+      "embedded_figures": 9,
+      "notebook_errors": 0,
+      "kernel": "project013",
+      "completed_utc": "2026-11-03T13:02:39.205796+00:00",
+      "src_physically_absent_during_execution": true
+    }
+  ],
+  "notebook_sha256": "0a5daac44d314d20219e9ee0b94399bbb19ef8a19d044156306336f740389c84",
+  "protected_existing_files": 121,
+  "all_protected_artifacts_unchanged": true,
+  "legacy_modules_restored": true,
+  "local_project_imports": [],
+  "duplicate_function_definitions": false,
+  "training_calls_in_source": 1,
+  "source_code_entry": "notebooks/project013.ipynb",
+  "data_initialization_tests": [
+    {
+      "case": "empty data directory",
+      "status": "passed",
+      "download_source": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/",
+      "official_archives_downloaded": 3,
+      "archive_sha256_and_crc_checked": true,
+      "raw_text_sha256_checked": true,
+      "processed_matches_original_bytes": true,
+      "statistics": {
+        "train": {
+          "samples": 5129,
+          "tokens": 136086,
+          "entities": 5145
+        },
+        "dev": {
+          "samples": 882,
+          "tokens": 23969,
+          "entities": 787
+        },
+        "test": {
+          "samples": 885,
+          "tokens": 24495,
+          "entities": 960
+        }
+      }
+    },
+    {
+      "case": "raw text present, archives and processed data absent",
+      "status": "passed",
+      "downloads_blocked": true,
+      "raw_hashes_and_mtimes_unchanged": true,
+      "processed_matches_original_bytes": true,
+      "statistics": {
+        "train": {
+          "samples": 5129,
+          "tokens": 136086,
+          "entities": 5145
+        },
+        "dev": {
+          "samples": 882,
+          "tokens": 23969,
+          "entities": 787
+        },
+        "test": {
+          "samples": 885,
+          "tokens": 24495,
+          "entities": 960
+        }
+      }
+    }
+  ],
+  "method_preservation": {
+    "parse_pubtator": "AST identical to audited legacy implementation",
+    "sentence_spans": "AST identical to audited legacy implementation",
+    "encode_samples": "AST identical to audited legacy implementation",
+    "decode_predictions": "AST identical to audited legacy implementation",
+    "entity_metrics": "AST identical to audited legacy implementation",
+    "metric_function": "AST identical to audited legacy implementation",
+    "load_model": "AST identical to audited legacy implementation",
+    "smoke_test": "AST identical to audited legacy implementation",
+    "TrainingArguments": "AST identical to original constructor call",
+    "Trainer": "AST identical to original constructor call"
+  },
+  "notebook_layout": {
+    "major_sections": 9,
+    "total_cells": 105,
+    "code_cells": 49,
+    "max_code_cell_lines": 47
+  },
+  "retrain_true_validation": "Original training arguments and Trainer constructor are AST-identical; evaluated argument objects match historical configs except output paths. Full retraining intentionally not executed.",
+  "runtime_dependencies": [
+    "Third-party Python packages in the existing .venv",
+    "Four fine-tuned checkpoints with tokenizer/config assets",
+    "Per-experiment training config, history, metrics and prediction records",
+    "Raw corpus locally or official HTTPS access for automatic acquisition"
+  ],
+  "not_runtime_dependencies": [
+    "src/",
+    "Pre-generated data/processed/",
+    "results/environment.json",
+    "Prior audit JSON files",
+    "Development scripts"
+  ],
+  "new_training_outputs": "Timestamped run folders and timestamped tuning/comparison files; existing selected exports remain unchanged."
+}

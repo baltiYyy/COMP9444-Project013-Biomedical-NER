@@ -1,0 +1,13 @@
+model,split,sentence_samples,encoded_chunks,sentences_over_max_length,max_sentence_subwords_with_specials,mean_sentence_subwords_with_specials,entity_crossing_chunk_boundaries,original_tokens,dropped_tokens
+bert_base,train,5129,5139,9,278,37.98206278026906,0,136086,0
+bert_base,dev,882,882,0,123,38.430839002267575,0,23969,0
+bert_base,test,885,890,5,158,39.392090395480224,0,24495,0
+biobert,train,5129,5139,9,278,37.98206278026906,0,136086,0
+biobert,dev,882,882,0,123,38.430839002267575,0,23969,0
+biobert,test,885,890,5,158,39.392090395480224,0,24495,0
+pubmedbert,train,5129,5135,5,278,30.80697991811269,0,136086,0
+pubmedbert,dev,882,882,0,106,31.10657596371882,0,23969,0
+pubmedbert,test,885,888,3,140,32.085875706214686,0,24495,0
+scibert,train,5129,5135,5,270,32.74147007213882,0,136086,0
+scibert,dev,882,882,0,112,32.84920634920635,0,23969,0
+scibert,test,885,888,3,144,33.96271186440678,0,24495,0

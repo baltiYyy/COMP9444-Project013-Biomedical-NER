@@ -1,0 +1,124 @@
+{
+  "bert_base": {
+    "status": "passed",
+    "loss": 1.227890133857727,
+    "batch_shape": [
+      2,
+      47
+    ],
+    "logits_shape": [
+      2,
+      47,
+      3
+    ],
+    "backward_pass": true,
+    "prediction_metric": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "forced_chunk_gold_roundtrip": true,
+    "sentence_samples": 2,
+    "encoded_chunks": 2,
+    "sentences_over_max_length": 0,
+    "max_sentence_subwords_with_specials": 47,
+    "mean_sentence_subwords_with_specials": 34.0,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 49,
+    "dropped_tokens": 0
+  },
+  "biobert": {
+    "status": "passed",
+    "loss": 1.2933882474899292,
+    "batch_shape": [
+      2,
+      47
+    ],
+    "logits_shape": [
+      2,
+      47,
+      3
+    ],
+    "backward_pass": true,
+    "prediction_metric": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "forced_chunk_gold_roundtrip": true,
+    "sentence_samples": 2,
+    "encoded_chunks": 2,
+    "sentences_over_max_length": 0,
+    "max_sentence_subwords_with_specials": 47,
+    "mean_sentence_subwords_with_specials": 34.0,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 49,
+    "dropped_tokens": 0
+  },
+  "pubmedbert": {
+    "status": "passed",
+    "loss": 1.0901938676834106,
+    "batch_shape": [
+      2,
+      36
+    ],
+    "logits_shape": [
+      2,
+      36,
+      3
+    ],
+    "backward_pass": true,
+    "prediction_metric": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "forced_chunk_gold_roundtrip": true,
+    "sentence_samples": 2,
+    "encoded_chunks": 2,
+    "sentences_over_max_length": 0,
+    "max_sentence_subwords_with_specials": 36,
+    "mean_sentence_subwords_with_specials": 26.5,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 49,
+    "dropped_tokens": 0,
+    "planned_checkpoint": "models/pubmedbert/baseline/best",
+    "tokenizer_options": {
+      "do_lower_case": true
+    },
+    "vocabulary_size": 28895
+  },
+  "scibert": {
+    "status": "passed",
+    "loss": 1.0311803817749023,
+    "batch_shape": [
+      2,
+      41
+    ],
+    "logits_shape": [
+      2,
+      41,
+      3
+    ],
+    "backward_pass": true,
+    "prediction_metric": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "forced_chunk_gold_roundtrip": true,
+    "sentence_samples": 2,
+    "encoded_chunks": 2,
+    "sentences_over_max_length": 0,
+    "max_sentence_subwords_with_specials": 41,
+    "mean_sentence_subwords_with_specials": 30.0,
+    "entity_crossing_chunk_boundaries": 0,
+    "original_tokens": 49,
+    "dropped_tokens": 0,
+    "planned_checkpoint": "models/scibert/baseline/best",
+    "tokenizer_options": {
+      "do_lower_case": false
+    },
+    "vocabulary_size": 31116
+  }
+}

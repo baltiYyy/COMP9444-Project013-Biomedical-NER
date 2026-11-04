@@ -1,0 +1,4 @@
+,DiseaseClass,SpecificDisease,CompositeMention,Modifier
+train,769,2972,115,1289
+dev,126,412,35,214
+test,121,555,20,264

@@ -1,0 +1,30 @@
+{
+  "source": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/",
+  "retrieved_utc": "2026-11-03T10:41:09.517873+00:00",
+  "files": {
+    "train": {
+      "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItrainset_corpus.zip",
+      "archive": "NCBItrainset_corpus.zip",
+      "sha256": "26157233d70aeda0b2ac1dda4fc9369b0717bd888f5afe511d0c1c6a5ad307a0",
+      "extracted": [
+        "NCBItrainset_corpus.txt"
+      ]
+    },
+    "dev": {
+      "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBIdevelopset_corpus.zip",
+      "archive": "NCBIdevelopset_corpus.zip",
+      "sha256": "61681ad09356619c8f4f3e1738663dd007ad0135720fdc90195120fea944cbe9",
+      "extracted": [
+        "NCBIdevelopset_corpus.txt"
+      ]
+    },
+    "test": {
+      "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItestset_corpus.zip",
+      "archive": "NCBItestset_corpus.zip",
+      "sha256": "b978442f39c739deb6619c70e7b07327d9eb1b71aff64996c02a592435583f46",
+      "extracted": [
+        "NCBItestset_corpus.txt"
+      ]
+    }
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "repository": "baltiYyy/COMP9444-Project013-Biomedical-NER",
+  "prepared_utc": "2026-11-04T09:13:42.876506+00:00",
+  "visibility": "public",
+  "weights": [
+    {
+      "path": "models/bert_base/baseline/best/model.safetensors",
+      "bytes": 430911284,
+      "sha256": "d9b4f84cb08dbd56f843783d264abefe1e5f9dfdceab48f7661dfca2a0e59dbd"
+    },
+    {
+      "path": "models/bert_base/pretrained/model.safetensors",
+      "bytes": 435755784,
+      "sha256": "1d8bdcee6021e2c25f0325e84889b61c2eb26b843eef5659c247af138d64f050"
+    },
+    {
+      "path": "models/biobert/baseline/best/model.safetensors",
+      "bytes": 430911284,
+      "sha256": "c355e0e450d4784090518f5b66ef5955cda598493af0e7d571c38f6a807823d9"
+    },
+    {
+      "path": "models/biobert/pretrained/pytorch_model.bin",
+      "bytes": 435780550,
+      "sha256": "21cf2141799f02e42da63d55f9649d9432738c2eda258cb494c435cc6300c787"
+    },
+    {
+      "path": "models/biobert/tuning/extended5/best/model.safetensors",
+      "bytes": 430911284,
+      "sha256": "abf8bcfd8c48a9d8f29acf99d48a901d95d16a03a6044187f938cf35cd48591c"
+    },
+    {
+      "path": "models/biobert/tuning/lr3e5/best/model.safetensors",
+      "bytes": 430911284,
+      "sha256": "a229da1b95753a10ba6cf2c9146ebe8d759f94cdda36aea532beff88dd846066"
+    },
+    {
+      "path": "models/pubmedbert/baseline/best/model.safetensors",
+      "bytes": 435599164,
+      "sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b"
+    },
+    {
+      "path": "models/pubmedbert/pretrained/pytorch_model.bin",
+      "bytes": 440474434,
+      "sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c"
+    },
+    {
+      "path": "models/scibert/baseline/best/model.safetensors",
+      "bytes": 437423932,
+      "sha256": "3ff7f676b8a778e43f07a2b08990d2111ee5169a52fde1be1861737b708f3fa0"
+    },
+    {
+      "path": "models/scibert/pretrained/pytorch_model.bin",
+      "bytes": 442301670,
+      "sha256": "4311e231db1e463e673732800285f0851de2c84be50c13ba0fdd26229a7a3c5f"
+    }
+  ],
+  "weight_bytes": 4350980670,
+  "redacted_metadata_files": [
+    "models/checkpoint_layout_verification.json",
+    "notebooks/project013.ipynb",
+    "results/bert_base/baseline/training_config.json",
+    "results/biobert/baseline/training_config.json",
+    "results/biobert/tuning/extended5/training_config.json",
+    "results/biobert/tuning/lr3e5/training_config.json",
+    "results/comparison/comparison_verification.json",
+    "results/comparison/final_audit.json",
+    "results/comparison/four_model_verification.json",
+    "results/comparison/quality_assurance.json",
+    "results/comparison/results_layout_verification.json",
+    "results/environment.json",
+    "results/pubmedbert/baseline/training_config.json",
+    "results/scibert/baseline/training_config.json"
+  ],
+  "source_hash_citations_refreshed": [
+    "results/comparison/baseline_metrics_summary.json"
+  ],
+  "excluded_files": [
+    "models/bert_base/baseline/best/training_args.bin",
+    "models/bert_base/pretrained/.cache/huggingface/.gitignore",
+    "models/bert_base/pretrained/.cache/huggingface/download/config.json.metadata",
+    "models/bert_base/pretrained/.cache/huggingface/download/model.safetensors.metadata",
+    "models/bert_base/pretrained/.cache/huggingface/download/tokenizer.json.metadata",
+    "models/bert_base/pretrained/.cache/huggingface/download/tokenizer_config.json.metadata",
+    "models/bert_base/pretrained/.cache/huggingface/download/vocab.txt.metadata",
+    "models/biobert/baseline/best/training_args.bin",
+    "models/biobert/pretrained/.cache/huggingface/.gitignore",
+    "models/biobert/pretrained/.cache/huggingface/download/config.json.metadata",
+    "models/biobert/pretrained/.cache/huggingface/download/pytorch_model.bin.metadata",
+    "models/biobert/pretrained/.cache/huggingface/download/vocab.txt.metadata",
+    "models/biobert/tuning/extended5/best/training_args.bin",
+    "models/biobert/tuning/lr3e5/best/training_args.bin",
+    "models/pubmedbert/baseline/best/training_args.bin",
+    "models/pubmedbert/pretrained/.cache/huggingface/.gitignore",
+    "models/pubmedbert/pretrained/.cache/huggingface/download/config.json.metadata",
+    "models/pubmedbert/pretrained/.cache/huggingface/download/pytorch_model.bin.metadata",
+    "models/pubmedbert/pretrained/.cache/huggingface/download/tokenizer_config.json.metadata",
+    "models/pubmedbert/pretrained/.cache/huggingface/download/vocab.txt.metadata",
+    "models/scibert/baseline/best/training_args.bin",
+    "models/scibert/pretrained/.cache/huggingface/.gitignore",
+    "models/scibert/pretrained/.cache/huggingface/download/config.json.metadata",
+    "models/scibert/pretrained/.cache/huggingface/download/pytorch_model.bin.metadata",
+    "models/scibert/pretrained/.cache/huggingface/download/vocab.txt.metadata"
+  ],
+  "all_training_code_data_metrics_and_weights_unchanged": true,
+  "secret_scan": "passed; no detected credentials or personal Windows home paths",
+  "files": {
+    ".gitattributes": {
+      "bytes": 175,
+      "sha256": "a709940fd31f9b313f113092493bf65a6004162c6989c726a39653ab6cb5a144"
+    },
+    ".gitignore": {
+      "bytes": 601,
+      "sha256": "88fff4d72ce1e7357c8d21b73fc0a121db03f9b5d069e2dc9edb3ec2ce267300"
+    },
+    "data/processed/dev.jsonl": {
+      "bytes": 1172429,
+      "sha256": "caf6025d7764b110a65b00b7fc256deee3561e5b71048c65b6475bef23cff553"
+    },
+    "data/processed/dev_documents.jsonl": {
+      "bytes": 407207,
+      "sha256": "2e2c581adfa479264486136c6c16b3241c047b1ec13c6e1e44c8ff1b429d98ae"
+    },
+    "data/processed/label_mapping.json": {
+      "bytes": 163,
+      "sha256": "6c03bd3a310d19478eec43e3f7e9bb883498ed881653829a67e2f18818aedbbf"
+    },
+    "data/processed/test.jsonl": {
+      "bytes": 1234820,
+      "sha256": "9840ee1dd2d2cf2b03f75534859be5e8b13405f340b71b5e01ab19c37b6294eb"
+    },
+    "data/processed/test_documents.jsonl": {
+      "bytes": 440000,
+      "sha256": "6cf3a3111953927abec3c1ef4a417794ba210323b06aeaebe21d42242b770f5b"
+    },
+    "data/processed/train.jsonl": {
+      "bytes": 6878422,
+      "sha256": "dd352851bb5dae96384383169b4f2d815d4058e1c46bcce078eeed8f137d81ed"
+    },
+    "data/processed/train_documents.jsonl": {
+      "bytes": 2419209,
+      "sha256": "4eadacb5ed292d747a3a64018ea1fa3e4d103b6df70d68e345358b2a5420769a"
+    },
+    "data/processed/validation_report.json": {
+      "bytes": 1898,
+      "sha256": "5a27ff81af4cdd9fb7b2df113a00c3c5647c108299f45bf580cb0f5e518680cd"
+    },
+    "data/raw/NCBIdevelopset_corpus.txt": {
+      "bytes": 178373,
+      "sha256": "02db559974624ae9cbe6cd95d64d953e6926bb63afb6b25b63e53bd8b41a4b55"
+    },
+    "data/raw/NCBIdevelopset_corpus.zip": {
+      "bytes": 57666,
+      "sha256": "61681ad09356619c8f4f3e1738663dd007ad0135720fdc90195120fea944cbe9"
+    },
+    "data/raw/NCBItestset_corpus.txt": {
+      "bytes": 189219,
+      "sha256": "61c8050bf6979ef7b943ec1158dfc03b651ea3367d4c37356f9de4841e85c9a3"
+    },
+    "data/raw/NCBItestset_corpus.zip": {
+      "bytes": 60234,
+      "sha256": "b978442f39c739deb6619c70e7b07327d9eb1b71aff64996c02a592435583f46"
+    },
+    "data/raw/NCBItrainset_corpus.txt": {
+      "bytes": 1045965,
+      "sha256": "3577a122567916449f4127289aa6f84d49c73ff32bf64b3be5ff14e019c98c38"
+    },
+    "data/raw/NCBItrainset_corpus.zip": {
+      "bytes": 324523,
+      "sha256": "26157233d70aeda0b2ac1dda4fc9369b0717bd888f5afe511d0c1c6a5ad307a0"
+    },
+    "data/raw/provenance.json": {
+      "bytes": 1098,
+      "sha256": "5a100eedca39aebf233c5547c7495887a8639a5ba53d8a8ed371718baf7c3177"
+    },
+    "models/bert_base/baseline/best/config.json": {
+      "bytes": 814,
+      "sha256": "0aaa693db5da7701afb340d33dc6a70360f44a5278b7d4780b79e0323850bda4"
+    },
+    "models/bert_base/baseline/best/model.safetensors": {
+      "bytes": 430911284,
+      "sha256": "d9b4f84cb08dbd56f843783d264abefe1e5f9dfdceab48f7661dfca2a0e59dbd"
+    },
+    "models/bert_base/baseline/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/bert_base/baseline/best/tokenizer.json": {
+      "bytes": 668923,
+      "sha256": "343989712a36cd8b253efeaf8baf6a08b9d2583f78e395e83832e8ee9f8d8ee1"
+    },
+    "models/bert_base/baseline/best/tokenizer_config.json": {
+      "bytes": 1278,
+      "sha256": "42a16d6d6e24ee14d4b42a81e86cbc74a8c8e8565d770905c2b07c0798235570"
+    },
+    "models/bert_base/baseline/best/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/bert_base/pretrained/config.json": {
+      "bytes": 570,
+      "sha256": "8b73abed2d67075fd3ec0f840aa53d9cccdc9169c04a7da135c07e721910ed74"
+    },
+    "models/bert_base/pretrained/model.safetensors": {
+      "bytes": 435755784,
+      "sha256": "1d8bdcee6021e2c25f0325e84889b61c2eb26b843eef5659c247af138d64f050"
+    },
+    "models/bert_base/pretrained/source_revision.json": {
+      "bytes": 1084,
+      "sha256": "79a63c411020dab769ea86313f4f83e943ad903fd767c0632c64ef0d051a7714"
+    },
+    "models/bert_base/pretrained/tokenizer.json": {
+      "bytes": 435797,
+      "sha256": "5b3360be30cdf39081153cf9d30bfb0503c011462fc9f77f097127c83ef0f4d9"
+    },
+    "models/bert_base/pretrained/tokenizer_config.json": {
+      "bytes": 49,
+      "sha256": "0f6d13e6f4da6f9e24f22ada6bc3be571123d858d7c0c05a8a7cd55a9c23c2e8"
+    },
+    "models/bert_base/pretrained/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/bert_base/selection.json": {
+      "bytes": 814,
+      "sha256": "65b09bb06215c96fce030c8f54dae3180922144da469edac599021ebcb8753e3"
+    },
+    "models/biobert/baseline/best/config.json": {
+      "bytes": 778,
+      "sha256": "077cc03b5c5c7e840c29dc0d9083aacd09ec90d6855fd1747f99505f12efa72e"
+    },
+    "models/biobert/baseline/best/model.safetensors": {
+      "bytes": 430911284,
+      "sha256": "c355e0e450d4784090518f5b66ef5955cda598493af0e7d571c38f6a807823d9"
+    },
+    "models/biobert/baseline/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/biobert/baseline/best/tokenizer.json": {
+      "bytes": 668923,
+      "sha256": "343989712a36cd8b253efeaf8baf6a08b9d2583f78e395e83832e8ee9f8d8ee1"
+    },
+    "models/biobert/baseline/best/tokenizer_config.json": {
+      "bytes": 1359,
+      "sha256": "7525d84e2d59af28db08243599eb1da698db5f415be9fc1f5a41332d27be405b"
+    },
+    "models/biobert/baseline/best/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/biobert/pretrained/config.json": {
+      "bytes": 313,
+      "sha256": "f11dfb757bea16339a33e1bf327b0aade6e57fd9c29dc6b84f7ddb20682f48bc"
+    },
+    "models/biobert/pretrained/pytorch_model.bin": {
+      "bytes": 435780550,
+      "sha256": "21cf2141799f02e42da63d55f9649d9432738c2eda258cb494c435cc6300c787"
+    },
+    "models/biobert/pretrained/source_revision.json": {
+      "bytes": 819,
+      "sha256": "3153d0efa82da49ae31056b0f5db5e3f17701f98d74cc414a8883a9ab3f4d64b"
+    },
+    "models/biobert/pretrained/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/biobert/tuning/extended5/best/config.json": {
+      "bytes": 778,
+      "sha256": "077cc03b5c5c7e840c29dc0d9083aacd09ec90d6855fd1747f99505f12efa72e"
+    },
+    "models/biobert/tuning/extended5/best/model.safetensors": {
+      "bytes": 430911284,
+      "sha256": "abf8bcfd8c48a9d8f29acf99d48a901d95d16a03a6044187f938cf35cd48591c"
+    },
+    "models/biobert/tuning/extended5/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/biobert/tuning/extended5/best/tokenizer.json": {
+      "bytes": 668923,
+      "sha256": "343989712a36cd8b253efeaf8baf6a08b9d2583f78e395e83832e8ee9f8d8ee1"
+    },
+    "models/biobert/tuning/extended5/best/tokenizer_config.json": {
+      "bytes": 1359,
+      "sha256": "7525d84e2d59af28db08243599eb1da698db5f415be9fc1f5a41332d27be405b"
+    },
+    "models/biobert/tuning/extended5/best/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/biobert/tuning/lr3e5/best/config.json": {
+      "bytes": 778,
+      "sha256": "077cc03b5c5c7e840c29dc0d9083aacd09ec90d6855fd1747f99505f12efa72e"
+    },
+    "models/biobert/tuning/lr3e5/best/model.safetensors": {
+      "bytes": 430911284,
+      "sha256": "a229da1b95753a10ba6cf2c9146ebe8d759f94cdda36aea532beff88dd846066"
+    },
+    "models/biobert/tuning/lr3e5/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/biobert/tuning/lr3e5/best/tokenizer.json": {
+      "bytes": 668923,
+      "sha256": "343989712a36cd8b253efeaf8baf6a08b9d2583f78e395e83832e8ee9f8d8ee1"
+    },
+    "models/biobert/tuning/lr3e5/best/tokenizer_config.json": {
+      "bytes": 1359,
+      "sha256": "7525d84e2d59af28db08243599eb1da698db5f415be9fc1f5a41332d27be405b"
+    },
+    "models/biobert/tuning/lr3e5/best/vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    },
+    "models/biobert/tuning/selection.json": {
+      "bytes": 670,
+      "sha256": "cebd30dd48b90d202188a1f459c649d0d2fd78efbf3d2a6ba522ab06f4638a80"
+    },
+    "models/checkpoint_layout_verification.json": {
+      "bytes": 31277,
+      "sha256": "b0a91befb0f1c65f26d9ff3efab0778bfdd0815bb26b245be7103275fc67eba2"
+    },
+    "models/pubmedbert/baseline/best/config.json": {
+      "bytes": 778,
+      "sha256": "fdcbd1a7d7e9f7f20ccb38950c032eb994f45604c74c74375fb0bc89249ce940"
+    },
+    "models/pubmedbert/baseline/best/model.safetensors": {
+      "bytes": 435599164,
+      "sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b"
+    },
+    "models/pubmedbert/baseline/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/pubmedbert/baseline/best/tokenizer.json": {
+      "bytes": 678903,
+      "sha256": "8d0d18d79af91cc3b41e365cde4de7067ca32ac84a48a58306241157e814fcfb"
+    },
+    "models/pubmedbert/baseline/best/tokenizer_config.json": {
+      "bytes": 1350,
+      "sha256": "f8ce43799207aeb3610bf551af3548c3e854f0e7b327982ddb642acc0d3fe6f4"
+    },
+    "models/pubmedbert/baseline/best/vocab.txt": {
+      "bytes": 225062,
+      "sha256": "7b36651908a88bc38bda41b728b2a598191e0d3b553cbacf7b1e5f026d5b5b9f"
+    },
+    "models/pubmedbert/pretrained/config.json": {
+      "bytes": 385,
+      "sha256": "56bab767c02bc792897638feb8addc06d483d9c73769a5f554bbabea1f5507a1"
+    },
+    "models/pubmedbert/pretrained/pytorch_model.bin": {
+      "bytes": 440474434,
+      "sha256": "d513412d396cecec5f67936ac871b4aaf1178dfb5193776e790fd2b28bba240c"
+    },
+    "models/pubmedbert/pretrained/source_revision.json": {
+      "bytes": 943,
+      "sha256": "1802d69809531e8e1d8508aa8373eb835cb700c84529a1365b510d07ec70492c"
+    },
+    "models/pubmedbert/pretrained/tokenizer_config.json": {
+      "bytes": 28,
+      "sha256": "53b6f42b8b8daddbdc6d3532c324187a92b46c1602bd6e8d4ad5a413b4fc90e1"
+    },
+    "models/pubmedbert/pretrained/vocab.txt": {
+      "bytes": 225062,
+      "sha256": "7b36651908a88bc38bda41b728b2a598191e0d3b553cbacf7b1e5f026d5b5b9f"
+    },
+    "models/scibert/baseline/best/config.json": {
+      "bytes": 778,
+      "sha256": "e5cbb253b03d92d51805ce36711e14a21e9955d8563d1d507acfae61956bffd0"
+    },
+    "models/scibert/baseline/best/model.safetensors": {
+      "bytes": 437423932,
+      "sha256": "3ff7f676b8a778e43f07a2b08990d2111ee5169a52fde1be1861737b708f3fa0"
+    },
+    "models/scibert/baseline/best/special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "models/scibert/baseline/best/tokenizer.json": {
+      "bytes": 711696,
+      "sha256": "7d7f7f94ebc356bfdbfd1fc2dde4d5a9a15d24dc9dd38c642b6392e8c6cb7462"
+    },
+    "models/scibert/baseline/best/tokenizer_config.json": {
+      "bytes": 1359,
+      "sha256": "7525d84e2d59af28db08243599eb1da698db5f415be9fc1f5a41332d27be405b"
+    },
+    "models/scibert/baseline/best/vocab.txt": {
+      "bytes": 222296,
+      "sha256": "f99aae27d5a572628760968078207b9d79ff241cc75de4b9e4323feabc61fd6b"
+    },
+    "models/scibert/pretrained/config.json": {
+      "bytes": 385,
+      "sha256": "4746671d7cc7c9f50702c468575161745a5225707d75f4f73fb754eff9b8227a"
+    },
+    "models/scibert/pretrained/pytorch_model.bin": {
+      "bytes": 442301670,
+      "sha256": "4311e231db1e463e673732800285f0851de2c84be50c13ba0fdd26229a7a3c5f"
+    },
+    "models/scibert/pretrained/source_revision.json": {
+      "bytes": 896,
+      "sha256": "f2ad7bca90c6ab2ac41d94bd80f18b325185c2238f06fca8a8a0e5eb3cc0fe58"
+    },
+    "models/scibert/pretrained/vocab.txt": {
+      "bytes": 222296,
+      "sha256": "f99aae27d5a572628760968078207b9d79ff241cc75de4b9e4323feabc61fd6b"
+    },
+    "notebooks/project013.ipynb": {
+      "bytes": 1216282,
+      "sha256": "50cec582a85515e2bac1a480a7d28b45e07909bfd23b6e8ea48af6cd1755b504"
+    },
+    "PROJECT_OVERVIEW.md": {
+      "bytes": 3693,
+      "sha256": "e33087b75690c8158435787ef33adb69413e893801bf71b1d453519e31378526"
+    },
+    "README.md": {
+      "bytes": 5207,
+      "sha256": "3764a7960c801a2d7cb8d3a5de373d873f61ea81b6dde712f1d1ea54c6d97259"
+    },
+    "requirements.txt": {
+      "bytes": 415,
+      "sha256": "ba36a67634002defc7f1609d6969650d149ffccea5fc8e26c62bb5138236df94"
+    },
+    "results/bert_base/baseline/predictions.jsonl": {
+      "bytes": 1323592,
+      "sha256": "f3ecc4d0e95e1b488375056fcc1c45947e18cb0944de2665f03abe054c38fdf5"
+    },
+    "results/bert_base/baseline/tokenization_audit.json": {
+      "bytes": 661,
+      "sha256": "6be2a6fff3476f791a24a2b9835e48b5620e5ca1e097e053b455a74e43603b23"
+    },
+    "results/bert_base/baseline/trainer_log.json": {
+      "bytes": 1631,
+      "sha256": "4587bceeaff53c6959e4f3a19ef6c136c5d5a5764061544693614f25a2601b50"
+    },
+    "results/bert_base/baseline/training_config.json": {
+      "bytes": 7039,
+      "sha256": "1dc61d3aef56771079a2b9321c13e8efdf239efe74963e4f261cfe1b4ab5d198"
+    },
+    "results/bert_base/baseline/training_curves.png": {
+      "bytes": 91286,
+      "sha256": "3f5c1d2d5872779e6b7c849ed26772cd4b9445fdba087a13c84079c8c3051c73"
+    },
+    "results/bert_base/baseline/training_history.csv": {
+      "bytes": 323,
+      "sha256": "a791d02e24a7f0aeafeba2cda578bcfb78ca3f6b32844ff662198f6dd9dc92e1"
+    },
+    "results/bert_base/baseline/validation_metrics.json": {
+      "bytes": 867,
+      "sha256": "4a2e7b9e6809c15edc5da5ce99cec7ca16ba8f64beb0b7c4139231f791b39cc4"
+    },
+    "results/biobert/baseline/predictions.jsonl": {
+      "bytes": 1337408,
+      "sha256": "6edcafdad17a005f79fa02833f842e4d9247eb4b2ea636020731bffcf17c6285"
+    },
+    "results/biobert/baseline/tokenization_audit.json": {
+      "bytes": 661,
+      "sha256": "6be2a6fff3476f791a24a2b9835e48b5620e5ca1e097e053b455a74e43603b23"
+    },
+    "results/biobert/baseline/trainer_log.json": {
+      "bytes": 1630,
+      "sha256": "99ea0b67a07ffc879ffed8793d6a33fe32e56d654f2994135eba40724d9188ab"
+    },
+    "results/biobert/baseline/training_config.json": {
+      "bytes": 6747,
+      "sha256": "19759691e79124fbd55d3833c2409340956666fccbc484b49bfd7847a500e578"
+    },
+    "results/biobert/baseline/training_curves.png": {
+      "bytes": 90677,
+      "sha256": "cab62ee7022e1918287a82fb0b8cbcdaa98902ed17ab5bb57d868aeef1073ad8"
+    },
+    "results/biobert/baseline/training_history.csv": {
+      "bytes": 324,
+      "sha256": "34eccebae2656e440e0663138eee629bfb6832b71ece5daddbe5e650b5c40c6d"
+    },
+    "results/biobert/baseline/validation_metrics.json": {
+      "bytes": 712,
+      "sha256": "c30d00dbe8a3b76f2b2854408b55153944bd8402b0defad20dfd0bb042f37afa"
+    },
+    "results/biobert/tuning/extended5/predictions.jsonl": {
+      "bytes": 1338932,
+      "sha256": "a26e2d3508dadb627685d423d42a839e8fd626fe38fdb3934c01e1d5b9637902"
+    },
+    "results/biobert/tuning/extended5/tokenization_audit.json": {
+      "bytes": 661,
+      "sha256": "6be2a6fff3476f791a24a2b9835e48b5620e5ca1e097e053b455a74e43603b23"
+    },
+    "results/biobert/tuning/extended5/trainer_log.json": {
+      "bytes": 2568,
+      "sha256": "a9d452fb0ffc32f49a7931753aa7c04acaa81baa42e24d8481a3b984aaff7efc"
+    },
+    "results/biobert/tuning/extended5/training_config.json": {
+      "bytes": 6767,
+      "sha256": "4403f5206b8c8de0eb2a3c2942250c40776f0d0f0673d56d23b20e48ac3124b3"
+    },
+    "results/biobert/tuning/extended5/training_curves.png": {
+      "bytes": 90992,
+      "sha256": "31ff05e62c7dba2af6af7e4fa2c563468b893f3665df9ba70ae02dc2d6cde4f3"
+    },
+    "results/biobert/tuning/extended5/training_history.csv": {
+      "bytes": 503,
+      "sha256": "a9c1c107f87fba4ba5c15fb2c2833523887137effd4b7e4d4d7957ed8ede5de0"
+    },
+    "results/biobert/tuning/extended5/validation_metrics.json": {
+      "bytes": 729,
+      "sha256": "d09383ad0f7c7c02bd468a094fa57116ecd1a1ba1082faf8f7a25a191bc69905"
+    },
+    "results/biobert/tuning/lr3e5/predictions.jsonl": {
+      "bytes": 1335572,
+      "sha256": "826459e92f251a3a9897c6dc607f5a369dda3e2ccd0211303a5e2f9e4445458f"
+    },
+    "results/biobert/tuning/lr3e5/tokenization_audit.json": {
+      "bytes": 661,
+      "sha256": "6be2a6fff3476f791a24a2b9835e48b5620e5ca1e097e053b455a74e43603b23"
+    },
+    "results/biobert/tuning/lr3e5/trainer_log.json": {
+      "bytes": 1629,
+      "sha256": "28f6008b33f4f587be9761c365e8765a00c887e2ccb16c05b98b8dc7624adfaa"
+    },
+    "results/biobert/tuning/lr3e5/training_config.json": {
+      "bytes": 6755,
+      "sha256": "4596b025042155d98475cdeae6834534b3312419e5feea767c0d7c46b2fae3eb"
+    },
+    "results/biobert/tuning/lr3e5/training_curves.png": {
+      "bytes": 91787,
+      "sha256": "31da8e0d210ab9e15ecf16b72b64261b389510a3bb046f97d130eec61324759b"
+    },
+    "results/biobert/tuning/lr3e5/training_history.csv": {
+      "bytes": 321,
+      "sha256": "8380533fa553ad5c87b5e5850d52397438fd9365b0975dd5f2a774b7ac7ffa35"
+    },
+    "results/biobert/tuning/lr3e5/validation_metrics.json": {
+      "bytes": 716,
+      "sha256": "708dc9ce645284406d4a817f783c24df3e828b19c2b4ca8edffb76dcdf6af93d"
+    },
+    "results/biobert/tuning_results.csv": {
+      "bytes": 1575,
+      "sha256": "7d9384aa6f24abd58f5b7a373260d37d7d3b4b4c242fd6f73567dc34a0a4f637"
+    },
+    "results/comparison/acceptance.json": {
+      "bytes": 1932,
+      "sha256": "35372515e09c7f5b64911dccd2bf5d85aac93411b5b63dce7331df73835092a7"
+    },
+    "results/comparison/baseline_metrics_summary.json": {
+      "bytes": 6875,
+      "sha256": "91982e49c671711d9ca82956ffe2e60ce6d7288ea53ae92e9a7b8221028f52dd"
+    },
+    "results/comparison/baseline_validation_history.csv": {
+      "bytes": 1251,
+      "sha256": "e4253e46141029372ecaa3a67f48da6b1cc0df9c66ee5c29933e9bd7303934f0"
+    },
+    "results/comparison/biobert_tuning_comparison.csv": {
+      "bytes": 1575,
+      "sha256": "7d9384aa6f24abd58f5b7a373260d37d7d3b4b4c242fd6f73567dc34a0a4f637"
+    },
+    "results/comparison/biobert_tuning_comparison.png": {
+      "bytes": 63278,
+      "sha256": "4d1e55e97f4b3942636688a312b754e9962eaa8ce47bcdb3c79c560b61a8a9e8"
+    },
+    "results/comparison/comparison_verification.json": {
+      "bytes": 11927,
+      "sha256": "28a4fd6132235b1f3de207cea7ea3b42423fa552cbbee3c9bb9cf21488a545ac"
+    },
+    "results/comparison/final_audit.json": {
+      "bytes": 20876,
+      "sha256": "64ce0202cf6e4138dde97f150816f3e37bc0d76571347801bd4af24345fe112f"
+    },
+    "results/comparison/final_audit_report.md": {
+      "bytes": 8150,
+      "sha256": "792fa8c64f86abc9dd9859b421e28a1d61fd3e6bd6d793209a16ea3eb7094d83"
+    },
+    "results/comparison/four_model_comparison.csv": {
+      "bytes": 2003,
+      "sha256": "b4d9231e98d797ad819ad49349f64fdff9e3a9c870f72434605c55cef9e6f41a"
+    },
+    "results/comparison/four_model_f1.png": {
+      "bytes": 53295,
+      "sha256": "cac9ebc21d1e6e8f3c68ed495d4538bc46c608aa0042cd0e2932c2f59ba3c023"
+    },
+    "results/comparison/four_model_tokenization_audit.csv": {
+      "bytes": 912,
+      "sha256": "8223b04b3fb347d672b8e3845d4b2d9fc2cd90bfbc333414af48e17e39d08d3e"
+    },
+    "results/comparison/four_model_training_settings.csv": {
+      "bytes": 970,
+      "sha256": "1dee601dd990b740a919201790e059eaef58ec61aa01ac8fb6a21d3956d6d94a"
+    },
+    "results/comparison/four_model_verification.json": {
+      "bytes": 24382,
+      "sha256": "8026e48fd48ceaf389990ee38ca64f9bc0cf53a10e1b4becbaa9916873700d7a"
+    },
+    "results/comparison/model_comparison.csv": {
+      "bytes": 2003,
+      "sha256": "b4d9231e98d797ad819ad49349f64fdff9e3a9c870f72434605c55cef9e6f41a"
+    },
+    "results/comparison/model_comparison.png": {
+      "bytes": 53295,
+      "sha256": "cac9ebc21d1e6e8f3c68ed495d4538bc46c608aa0042cd0e2932c2f59ba3c023"
+    },
+    "results/comparison/precision_recall_f1_comparison.png": {
+      "bytes": 70326,
+      "sha256": "c3e5e07c3cedd358cbd9cd450403168d028944d9cf584030e9905590dbe9676b"
+    },
+    "results/comparison/quality_assurance.json": {
+      "bytes": 5047,
+      "sha256": "dd03e4f80ef9cfd857a8563c40ea0840555b894fd5bc4a9f584605153a225453"
+    },
+    "results/comparison/results_layout_verification.json": {
+      "bytes": 26552,
+      "sha256": "ff9361c055f20a10dacbed0597b75ceeb85c01bceb572304efa9809fc9a63f7e"
+    },
+    "results/comparison/self_containment_verification.json": {
+      "bytes": 8985,
+      "sha256": "d487cc53e051272cf0c9285dd3f4a1f6530897c31277214cef45ce8d4eb21cc6"
+    },
+    "results/comparison/validation_loss_comparison.png": {
+      "bytes": 64541,
+      "sha256": "2f8891635f26004b6ada0333d6d044057ce996562b271b59c703e5c158935d1d"
+    },
+    "results/eda/dataset_statistics.csv": {
+      "bytes": 381,
+      "sha256": "e1570ef16fd2eed1a1ed8dead3af89ba52e1dabcad938e8eac95a6f6d52c7a50"
+    },
+    "results/eda/entity_length_statistics.csv": {
+      "bytes": 189,
+      "sha256": "3ea028dfe726d9a6d983b86cafea359475e5f4ed5c6c50a655d4d81f21f87001"
+    },
+    "results/eda/entity_lengths_and_density.png": {
+      "bytes": 105922,
+      "sha256": "2cb8d7f10fc5c030b3c57ae6e1e95477684ebb5cd14a9766c3f6fcea1f32c295"
+    },
+    "results/eda/label_distribution.png": {
+      "bytes": 84796,
+      "sha256": "e2ebdc9ee005276a71d00fc39699dd6bd13226484579be6aa2c0cd2e3a225a91"
+    },
+    "results/eda/sentence_lengths.png": {
+      "bytes": 55278,
+      "sha256": "b42fdd0c01303ee881ae1ed0c63035b7aa667b85c4be4b3578d30746bba43871"
+    },
+    "results/eda/source_category_counts.csv": {
+      "bytes": 123,
+      "sha256": "d97ea2843b21ae634c68956fd75539b9e666b89c0570321dcd04349fb57ea3d0"
+    },
+    "results/eda/split_distribution.png": {
+      "bytes": 71630,
+      "sha256": "9ba73f5d700b04c5548462f29ffd591f1bda8bf0b48fafdc91c587f7c26ee495"
+    },
+    "results/eda/tokenization_audit.csv": {
+      "bytes": 912,
+      "sha256": "8223b04b3fb347d672b8e3845d4b2d9fc2cd90bfbc333414af48e17e39d08d3e"
+    },
+    "results/environment.json": {
+      "bytes": 682,
+      "sha256": "97cdeb7d45946ba201acc5e48fc7b9879c026fac91bb3f9190e6c9804f4a6d5b"
+    },
+    "results/pubmedbert/baseline/predictions.jsonl": {
+      "bytes": 1355714,
+      "sha256": "1eda9bcd9bcb994992d529f86013a74ee51955403d8b8672fbaac5f0f62ab138"
+    },
+    "results/pubmedbert/baseline/tokenization_audit.json": {
+      "bytes": 660,
+      "sha256": "3967092414840d96c65d7c9d7dc9cc1484b67eb47c0d3f4049c10f6f223f19b7"
+    },
+    "results/pubmedbert/baseline/trainer_log.json": {
+      "bytes": 1628,
+      "sha256": "d21440cc5e15c6cd979b2019fbd8c83aa918e7172cb3de46902d9b346963c5d1"
+    },
+    "results/pubmedbert/baseline/training_config.json": {
+      "bytes": 6948,
+      "sha256": "10e8b0701f486e133535399031636d49a27fd3b3dbb7abcd9bf5c77b51b80ec3"
+    },
+    "results/pubmedbert/baseline/training_curves.png": {
+      "bytes": 91113,
+      "sha256": "4704cb529567b470adcdbcd9d16628833d68aa44f6965af5df6a25bb3cc3fc09"
+    },
+    "results/pubmedbert/baseline/training_history.csv": {
+      "bytes": 325,
+      "sha256": "05bd71f2bd6f6607fb50685f70e3aef543fc4e43f154f36207a3d180b6a26c5e"
+    },
+    "results/pubmedbert/baseline/validation_metrics.json": {
+      "bytes": 739,
+      "sha256": "f7c57e1277195e8092035209b5d6c4ad729e66c7f597bf864de0c4f5fc86d166"
+    },
+    "results/pubmedbert/smoke_test.json": {
+      "bytes": 726,
+      "sha256": "cdb5538f0ef5dc9efad4c28e64b0a4c64889a72bb5b272334e9ec59d67d3c9e0"
+    },
+    "results/scibert/baseline/predictions.jsonl": {
+      "bytes": 1336422,
+      "sha256": "e02505b417e1876ad3390af2426c32dd3e2ac4ac4470492ac05c2c0e102ca1d1"
+    },
+    "results/scibert/baseline/tokenization_audit.json": {
+      "bytes": 660,
+      "sha256": "ff3178941c88647dc549cd126705410dc2cbdb9a09e7537f0f0ddbadcbe9f26b"
+    },
+    "results/scibert/baseline/trainer_log.json": {
+      "bytes": 1628,
+      "sha256": "508e411d64406731a170ab83487f20182da20f76d7c269fa229d0fab5e20de40"
+    },
+    "results/scibert/baseline/training_config.json": {
+      "bytes": 6891,
+      "sha256": "a30cb0c91fe78ce84b42ccf169eb7c590282cac5f1dc7306e5ecee44ca863ece"
+    },
+    "results/scibert/baseline/training_curves.png": {
+      "bytes": 87846,
+      "sha256": "1ed96e86af32c584d41590e48f4fd462a47138ecc56198470dd888806c94ca27"
+    },
+    "results/scibert/baseline/training_history.csv": {
+      "bytes": 323,
+      "sha256": "58d8b1a163a6219cac47de94a8275b475df0b9b9a021970bd50c07adb4727d5d"
+    },
+    "results/scibert/baseline/validation_metrics.json": {
+      "bytes": 710,
+      "sha256": "cfbdbc9baa8a79ead47e26e71b78fe5f452189663b3d6a2abe0f4fb4b7203806"
+    },
+    "results/scibert/smoke_test.json": {
+      "bytes": 724,
+      "sha256": "3e0efcbbb606132d8c5379eea82c921365e1fa0fbd46e7c51144157bfd623374"
+    },
+    "results/smoke_test.json": {
+      "bytes": 2913,
+      "sha256": "9aa1dc6030a6ec8ba2ae1f3cd3590a47d75a6a5104531503fbb1262cf4965e91"
+    },
+    "RUNNING.md": {
+      "bytes": 14294,
+      "sha256": "994f1a920dcfe8eb0904838a1fa111882a77d78712115c766fa70b2bb3c18175"
+    },
+    "src/data.py": {
+      "bytes": 9977,
+      "sha256": "3f7b7c8e931e23051585cc443e413f3680f64e9534958bb7016d8a2563e36ab8"
+    },
+    "src/ner.py": {
+      "bytes": 17142,
+      "sha256": "44945a32e34fa499e2ed0fcf8ae3631b3e197dbcd2a9908ca3f03fd5a4fda100"
+    }
+  }
+}

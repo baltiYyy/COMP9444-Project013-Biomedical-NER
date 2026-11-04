@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-04T05:51:43.989215+00:00",
+  "updated_files": [
+    "results/smoke_test.json",
+    "results/biobert/tuning_results.csv",
+    "results/comparison/acceptance.json",
+    "results/comparison/four_model_comparison.csv",
+    "results/comparison/four_model_f1.png",
+    "results/comparison/model_comparison.csv",
+    "results/comparison/model_comparison.png",
+    "results/comparison/quality_assurance.json",
+    "results/eda/tokenization_audit.csv"
+  ],
+  "new_files": [
+    "results/comparison/baseline_metrics_summary.json",
+    "results/comparison/baseline_validation_history.csv",
+    "results/comparison/biobert_tuning_comparison.csv",
+    "results/comparison/biobert_tuning_comparison.png",
+    "results/comparison/comparison_verification.json",
+    "results/comparison/precision_recall_f1_comparison.png",
+    "results/comparison/validation_loss_comparison.png"
+  ],
+  "replaced_legacy_plot": "model_comparison.png: two-model/tuning panels replaced by four-baseline F1",
+  "historical_audits_preserved": true,
+  "all_existing_notebook_functions_unchanged": true,
+  "protected_model_files": 83,
+  "original_experiment_records_and_curves_unchanged": true,
+  "dataset_statistics_and_figures_unchanged": true,
+  "expanded_eda_tokenizer_audit": "2 to 4 tokenizers",
+  "code_cells": 63,
+  "figures": 14,
+  "notebook_errors": 0,
+  "notebook_sha256": "65173e5285569ccb631169bc93b0164d41820947584782f60af2b83b2f362a21",
+  "baseline_csv_json_and_plot_data_match": true,
+  "comparison_png_sha256": {
+    "model_comparison": "cac9ebc21d1e6e8f3c68ed495d4538bc46c608aa0042cd0e2932c2f59ba3c023",
+    "precision_recall_f1_comparison": "c3e5e07c3cedd358cbd9cd450403168d028944d9cf584030e9905590dbe9676b",
+    "validation_loss_comparison": "2f8891635f26004b6ada0333d6d044057ce996562b271b59c703e5c158935d1d",
+    "biobert_tuning_comparison": "4d1e55e97f4b3942636688a312b754e9962eaa8ce47bcdb3c79c560b61a8a9e8"
+  },
+  "embedded_comparison_png_bytes_match_exports": true,
+  "kernel_unchanged": true,
+  "baseline_metrics": [
+    {
+      "Model": "BERT-base",
+      "model_key": "bert_base",
+      "Pretraining Strategy": "General-domain",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8069129916567342,
+      "recall": 0.8602287166454892,
+      "f1": 0.8327183271832718,
+      "validation_loss": 0.055922731757164,
+      "split": "dev",
+      "model": "bert-base-cased",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-966",
+      "best_checkpoint": "models/bert_base/baseline/best",
+      "checkpoint_sha256": "d9b4f84cb08dbd56f843783d264abefe1e5f9dfdceab48f7661dfca2a0e59dbd",
+      "training_seconds": 145.8913,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-03T10:57:36.515856+00:00",
+      "checkpoint_reload_verified": true,
+      "checkpoint_reload_method": "bitwise weight equality and matching FP16 logits against selected Trainer checkpoint",
+      "training_duration_source": "Trainer train_runtime log",
+      "result_directory": "results/bert_base/baseline"
+    },
+    {
+      "Model": "BioBERT Initial",
+      "model_key": "biobert",
+      "Pretraining Strategy": "Continued biomedical pretraining",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8485958485958486,
+      "recall": 0.8831003811944091,
+      "f1": 0.8655043586550435,
+      "validation_loss": 0.04828420281410217,
+      "split": "dev",
+      "model": "dmis-lab/biobert-base-cased-v1.1",
+      "run_name": "initial",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-966",
+      "best_checkpoint": "models/biobert/baseline/best",
+      "checkpoint_sha256": "c355e0e450d4784090518f5b66ef5955cda598493af0e7d571c38f6a807823d9",
+      "training_seconds": 153.10425670002587,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-03T11:00:57.601811+00:00",
+      "checkpoint_reload_verified": true,
+      "result_directory": "results/biobert/baseline"
+    },
+    {
+      "Model": "PubMedBERT",
+      "model_key": "pubmedbert",
+      "Pretraining Strategy": "Biomedical pretraining from scratch",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8553770086526576,
+      "recall": 0.8792884371029225,
+      "f1": 0.8671679197994987,
+      "validation_loss": 0.050003424286842346,
+      "split": "dev",
+      "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-963",
+      "best_checkpoint": "models/pubmedbert/baseline/best",
+      "checkpoint_sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b",
+      "training_seconds": 716.3267429000698,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-04T02:09:45.127967+00:00",
+      "result_directory": "results/pubmedbert/baseline",
+      "checkpoint_reload_verified": true
+    },
+    {
+      "Model": "SciBERT",
+      "model_key": "scibert",
+      "Pretraining Strategy": "Scientific-domain pretraining",
+      "LR": 2e-05,
+      "epoch_budget": 3,
+      "precision": 0.8475836431226765,
+      "recall": 0.8691232528589581,
+      "f1": 0.8582183186951067,
+      "validation_loss": 0.04854137450456619,
+      "split": "dev",
+      "model": "allenai/scibert_scivocab_cased",
+      "run_name": "baseline",
+      "best_epoch": 3.0,
+      "selected_trainer_checkpoint": "checkpoint-963",
+      "best_checkpoint": "models/scibert/baseline/best",
+      "checkpoint_sha256": "3ff7f676b8a778e43f07a2b08990d2111ee5169a52fde1be1861737b708f3fa0",
+      "training_seconds": 719.8700735999737,
+      "number_of_sentences": 882,
+      "number_of_gold_entities": 787,
+      "completed_utc": "2026-11-04T02:22:41.050012+00:00",
+      "result_directory": "results/scibert/baseline",
+      "checkpoint_reload_verified": true
+    }
+  ],
+  "biobert_tuning": [
+    {
+      "Model": "BioBERT Initial",
+      "f1": 0.8655043586550435
+    },
+    {
+      "Model": "BioBERT LR Candidate",
+      "f1": 0.8619612742036228
+    },
+    {
+      "Model": "BioBERT Selected / Extended5",
+      "f1": 0.8701134930643128
+    }
+  ],
+  "training_calls": [],
+  "environment": {
+    "python_executable": "<workspace>\\.venv\\Scripts\\python.exe",
+    "python": "3.10.11",
+    "torch": "2.14.0+cu130",
+    "transformers": "4.57.6",
+    "cuda_available": true,
+    "cuda_build": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "kernel": "project013",
+    "mode": "checkpoint reproduction"
+  },
+  "plots": {
+    "model_comparison": [
+      {
+        "title": "Matched-budget Validation Entity F1",
+        "bars": [
+          0.8327183271832718,
+          0.8655043586550435,
+          0.8671679197994987,
+          0.8582183186951067
+        ],
+        "lines": []
+      }
+    ],
+    "precision_recall_f1_comparison": [
+      {
+        "title": "Baseline Dev Precision, Recall and Entity F1",
+        "bars": [
+          0.8069129916567342,
+          0.8485958485958486,
+          0.8553770086526576,
+          0.8475836431226765,
+          0.8602287166454892,
+          0.8831003811944091,
+          0.8792884371029225,
+          0.8691232528589581,
+          0.8327183271832718,
+          0.8655043586550435,
+          0.8671679197994987,
+          0.8582183186951067
+        ],
+        "lines": []
+      }
+    ],
+    "validation_loss_comparison": [
+      {
+        "title": "Baseline Validation Loss",
+        "bars": [],
+        "lines": [
+          {
+            "label": "BERT-base",
+            "x": [
+              1.0,
+              2.0,
+              3.0
+            ],
+            "y": [
+              0.0500521063804626,
+              0.0523595996201038,
+              0.055922731757164
+            ]
+          },
+          {
+            "label": "BioBERT Initial",
+            "x": [
+              1.0,
+              2.0,
+              3.0
+            ],
+            "y": [
+              0.0452876612544059,
+              0.0446382537484169,
+              0.0482842028141021
+            ]
+          },
+          {
+            "label": "PubMedBERT",
+            "x": [
+              1.0,
+              2.0,
+              3.0
+            ],
+            "y": [
+              0.0423597991466522,
+              0.0462260171771049,
+              0.0500034242868423
+            ]
+          },
+          {
+            "label": "SciBERT",
+            "x": [
+              1.0,
+              2.0,
+              3.0
+            ],
+            "y": [
+              0.0441013351082801,
+              0.0439608916640281,
+              0.0485413745045661
+            ]
+          }
+        ]
+      }
+    ],
+    "biobert_tuning_comparison": [
+      {
+        "title": "BioBERT Tuning: Validation Entity F1",
+        "bars": [
+          0.8655043586550435,
+          0.8619612742036228,
+          0.8701134930643128
+        ],
+        "lines": []
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "model_key": "bert_base",
+      "run_name": "baseline",
+      "result_directory": "results/bert_base/baseline",
+      "checkpoint": "models/bert_base/baseline/best",
+      "precision": 0.8069129916567342,
+      "recall": 0.8602287166454892,
+      "f1": 0.8327183271832718,
+      "checkpoint_sha256": "d9b4f84cb08dbd56f843783d264abefe1e5f9dfdceab48f7661dfca2a0e59dbd",
+      "fresh_predictions_match": true
+    },
+    {
+      "model_key": "biobert",
+      "run_name": "initial",
+      "result_directory": "results/biobert/baseline",
+      "checkpoint": "models/biobert/baseline/best",
+      "precision": 0.8485958485958486,
+      "recall": 0.8831003811944091,
+      "f1": 0.8655043586550435,
+      "checkpoint_sha256": "c355e0e450d4784090518f5b66ef5955cda598493af0e7d571c38f6a807823d9",
+      "fresh_predictions_match": true
+    },
+    {
+      "model_key": "biobert",
+      "run_name": "lr3e5",
+      "result_directory": "results/biobert/tuning/lr3e5",
+      "checkpoint": "models/biobert/tuning/lr3e5/best",
+      "precision": 0.8476658476658476,
+      "recall": 0.8767471410419314,
+      "f1": 0.8619612742036228,
+      "checkpoint_sha256": "a229da1b95753a10ba6cf2c9146ebe8d759f94cdda36aea532beff88dd846066",
+      "fresh_predictions_match": true
+    },
+    {
+      "model_key": "biobert",
+      "run_name": "extended5",
+      "result_directory": "results/biobert/tuning/extended5",
+      "checkpoint": "models/biobert/tuning/extended5/best",
+      "precision": 0.8635794743429287,
+      "recall": 0.8767471410419314,
+      "f1": 0.8701134930643128,
+      "checkpoint_sha256": "abf8bcfd8c48a9d8f29acf99d48a901d95d16a03a6044187f938cf35cd48591c",
+      "fresh_predictions_match": true
+    },
+    {
+      "model_key": "pubmedbert",
+      "run_name": "baseline",
+      "result_directory": "results/pubmedbert/baseline",
+      "checkpoint": "models/pubmedbert/baseline/best",
+      "precision": 0.8553770086526576,
+      "recall": 0.8792884371029225,
+      "f1": 0.8671679197994987,
+      "checkpoint_sha256": "b6a46e8b43ec7bdaf1355c23ecbac58c60b0ba543a5bcd5b870768549925829b",
+      "fresh_predictions_match": true
+    },
+    {
+      "model_key": "scibert",
+      "run_name": "baseline",
+      "result_directory": "results/scibert/baseline",
+      "checkpoint": "models/scibert/baseline/best",
+      "precision": 0.8475836431226765,
+      "recall": 0.8691232528589581,
+      "f1": 0.8582183186951067,
+      "checkpoint_sha256": "3ff7f676b8a778e43f07a2b08990d2111ee5169a52fde1be1861737b708f3fa0",
+      "fresh_predictions_match": true
+    }
+  ]
+}
